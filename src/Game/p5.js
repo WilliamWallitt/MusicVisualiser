@@ -3,7 +3,7 @@ import Sketch from "react-p5"
 import Circle from "./Circle"
 import SongsHandler from "./songs";
 
-import {Howl, Howler} from "howler"
+import {Howl} from "howler"
 
 export default class p5 extends React.Component {
 
