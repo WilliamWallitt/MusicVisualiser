@@ -1,4 +1,4 @@
-export default class Circle {
+export default class Shape {
 
     constructor (x, y, d, fill, p5) {
 

@@ -1,8 +1,7 @@
 import React from "react"
 import Sketch from "react-p5"
-import Circle from "./Circle"
+import Shape from "./Circle"
 import SongsHandler from "./songs";
-
 import {Howl} from "howler"
 
 export default class p5 extends React.Component {
@@ -14,10 +13,8 @@ export default class p5 extends React.Component {
             dupKey: false,
             keyTyped: '',
             dupPlay: null
-
         }
     }
-
 
     circle_arr = []
 
@@ -82,7 +79,7 @@ export default class p5 extends React.Component {
         }
 
         let r = this.rgb_value(255), g = this.rgb_value(255), b = this.rgb_value(255)
-        let c = new Circle(this.rgb_value(window.innerWidth), this.rgb_value(window.innerHeight), this.rgb_value(window.innerHeight / 2.4), [r, g, b], p5)
+        let c = new Shape(this.rgb_value(window.innerWidth), this.rgb_value(window.innerHeight), this.rgb_value(window.innerHeight / 2.4), [r, g, b], p5)
         this.circle_arr.push([c, this.rgb_value(0)])
     }
 
